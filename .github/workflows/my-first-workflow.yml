@@ -1,0 +1,16 @@
+name: workflow-1
+on: 
+  workflow_dispatch:
+    inputs:
+      Name:
+        description: input the name
+        required: true
+        default: Me, myseff
+  schedule:
+    - cron: '*/15 6 * * *'
+jobs:
+  echo-steps:
+    runs-on: unbuntu-labs
+    steps:
+      - run: |
+          echo "hello ${{inputs.Name}}
