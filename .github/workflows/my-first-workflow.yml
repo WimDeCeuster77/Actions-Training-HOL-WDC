@@ -10,7 +10,8 @@ on:
     - cron: '*/15 6 * * *'
 jobs:
   echo-steps:
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: |
           echo "hello ${{inputs.Name}}
+ 
