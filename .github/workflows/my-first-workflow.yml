@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "hello ${{inputs.Name}}
+          echo "hello ${{inputs.Name}}"
  
